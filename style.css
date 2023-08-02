@@ -1,0 +1,47 @@
+.main-container {
+  width: 600px;
+  margin: 40px auto;
+  font-family: "Roboto", sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  border-bottom: 3px solid #023047;
+}
+
+.video-container {
+  position: relative;
+}
+
+.video-container video {
+  width: 100%;
+}
+
+.video-container .hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% - 24px), -50%);
+  background: #023047;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  pointer-events: none;
+  box-shadow: 4px 4px 50px -4px rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  letter-spacing: 0.8px;
+  transition: all 400ms ease;
+}
+
+.video-container .hover-text.active {
+  opacity: 1;
+  letter-spacing: 0;
+  transform: translate(-50%, -50%);
+}
+
+.video-description {
+  padding: 16px;
+  line-height: 1.7;
+  background: #edf6f9;
+  color: #023047;
+  text-align: center;
+  font-size: 18px;
+}
